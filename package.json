@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "firebase": "^9.6.6",
+    "firebase-admin": "^10.0.2",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "multiparty": "^4.2.2",
+    "node-fetch": "^3.2",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "tar": "^6.1.11"
+  },
+  "name": "communal_diary",
+  "version": "1.0.0",
+  "description": "A shared anonymous diary",
+  "main": "app.js",
+  "type": "commonjs",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilNordahn/node_exam_project.git"
+  },
+  "author": "Emil Nordahn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmilNordahn/node_exam_project/issues"
+  },
+  "homepage": "https://github.com/EmilNordahn/node_exam_project#readme"
+}

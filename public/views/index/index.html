@@ -1,0 +1,28 @@
+<div class="sticky" style="z-index: 1;">
+  <a onclick="document.getElementById('create-new-entry').style.display='block'">
+    <img src="/styling/icons/plus.png" alt="" width="100px" height="100px" style="background-color: white; border-radius: 100px;" ><br>
+    <!-- <label for="create-new-entry" class="create-new-entry-label cyan-contrast">Post an entry</label> -->
+  </a>
+</div>
+
+<div id="entries-wrapper" class="entries-container"></div>
+<div class="empty">No more entries :(</div>
+
+<div id="create-new-entry" class="create-entry-modal darker-bg">
+  <div class="white-bg modal-content animate-bottom">
+    <header class="text-container cyan-contrast">
+      <h2>Create a new entry</h2>
+    </header>
+    <div class="text-container">
+      <form id="entry-form" action="createEntry" method="post" enctype="multipart/form-data" class="entry-form">
+        <input class="input" type="text" name="title" id="title" required placeholder="Title"><br>
+        <textarea class="input" id="content" name="content" form="entry-form" required placeholder="What's on your mind?" rows="10" style="resize: none;"></textarea><br>
+        <input class="button cyan-contrast" type="submit" value="Post"></input>
+      </form>
+    </div> 
+    <div class="text-container cyan-contrast">
+      <p>Remember to not post any identifiable information</p>
+      <p style="font-size: small; font-style: italic;">and please be nice</p>
+    </div>   
+  </div>
+</div>
